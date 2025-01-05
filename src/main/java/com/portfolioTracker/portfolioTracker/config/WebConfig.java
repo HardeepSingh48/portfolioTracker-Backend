@@ -11,7 +11,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(@NonNull CorsRegistry registry) {
         registry.addMapping("/api/**")  // Allow CORS for /api endpoint
-                .allowedOrigins("http://localhost:5173")  // Allow only the frontend's origin
+                .allowedOrigins("https://portfolio-trackers-frontend.vercel.app/")  // Allow only the frontend's origin
                 .allowedMethods("GET", "POST", "PUT", "DELETE")  // Allowed HTTP methods
                 .allowedHeaders("*");  // Allow all headers
     }
